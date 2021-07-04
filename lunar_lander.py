@@ -4,11 +4,8 @@ import tensorflow as tf
 from collections import deque
 import random
 import cv2
-import keyboard
-#from atari_wrapper import wrap_deepmind
 from matplotlib import pyplot as plt
 from PIL import Image
-import imageio
 import time
 
 reward_list = [0]
@@ -160,14 +157,7 @@ for ep in range(1,agent.max_episodes+1):
             agent.epsilon = (agent.epsilon * agent.epsilon_decrement) if agent.epsilon > agent.epsilon_min else agent.epsilon_min 
 
   agent.loss_list.append((np.sum(agent.loss_list)+agent.loss)/(len(agent.loss_list)+1))
-  end = time.time()
-  print(end-begin)
 
-       
-            
-            
-
-     
 agent.q_model.save("Breakout-test-model")     
 reward_list=np.array(reward_list)
 np.save("Rewards",reward_list)
