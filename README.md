@@ -7,7 +7,7 @@ This is my [TensorFlow](https://www.tensorflow.org/) implementations of Deep Q l
 - The task is to land the space-ship between the flags smoothly. The ship has 3 throttles in it. One throttle points downward and other 2 points in the left and right direction. With the help of these, you have to control the Ship. There are 2 version for this task. One is discrete version which has discrete action space and other is continuous which has continuous action space.
 - In order to solve the episode you have to get a reward of +200 for 100 consecutive episodes. I solved both the version under 400 episodes.
 - This environment was in my capstone project as part of my [University of Alberta Specialization](https://coursera.org/share/5f2b2e39b21fc68ac4062f08ad6e87d3) which did not use Tensorflow to solve the Environment.
-
+- I have also included a trained model to quickly test out the environment.
 ## Prerequisites
 
 - Python 3.7
